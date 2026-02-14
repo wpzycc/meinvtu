@@ -74,7 +74,7 @@
             gap: 5px;
         }
         
-        .category-btn {
+        。category-btn {
             background: rgba(255, 255, 255, 0.1);
             border: 2px solid transparent;
             color: #fff;
@@ -102,7 +102,7 @@
             color: #fff;
         }
         
-        .category-dropdown {
+        。category-dropdown {
             position: relative;
         }
         
@@ -751,7 +751,7 @@
                 e.preventDefault();
                 e.stopPropagation();
                 const category = this.getAttribute('data-category');
-                console.log('分类按钮被点击:', category);
+                console。log('分类按钮被点击:', category);
                 switchCategory(category);
             });
         });
@@ -820,7 +820,7 @@
         const CORRECT_SECRET = 'xiezhen123';
 
         // 主函数
-        document.addEventListener('DOMContentLoaded', () => {
+        document。addEventListener('DOMContentLoaded', () => {
             if (shouldShowModal()) {
                 createModal();
             }
@@ -855,68 +855,7 @@
             attachEventListeners(modal);
         }
 
-        // 应用样式
-        function applyStyles(modal) {
-            const styles = `
-                #${MODAL_ID} {
-                    display: flex;
-                    position: fixed;
-                    z-index: 9999;
-                    left: 0;
-                    top: 0;
-                    width: 50%;
-                    height: 50%;
-                    background-color: rgba(0,0,0,0.5);
-                    align-items: center;
-                    justify-content: center;
-                }
-                #${MODAL_ID} .modal-content {
-                    background-color: #fff;
-                    padding: 2rem;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                    max-width: 90%;
-                    width: 400px;
-                    position: relative;
-                }
-                #${MODAL_ID} p {
-                    text-align: center;
-                    margin-bottom: 1rem;
-                    font-size: 1rem;
-                }
-                #${MODAL_ID} input {
-                    display: block;
-                    width: 100%;
-                    margin: 0.5rem 0;
-                    padding: 0.5rem;
-                    border: 1px solid #ddd;
-                    border-radius: 4px;
-                    font-size: 1rem;
-                }
-                #${MODAL_ID} .submit-button {
-                    display: block;
-                    width: 100%;
-                    padding: 0.5rem;
-                    margin-top: 1rem;
-                    background-color: #4CAF50;
-                    color: white;
-                    border: none;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    font-size: 1rem;
-                }
-                #${MODAL_ID} img {
-                    display: block;
-                    margin: 1rem auto 0;
-                    max-width: 50%;
-                    height: auto;
-                }
-            `;
 
-            const styleElement = document.createElement('style');
-            styleElement.textContent = styles;
-            document.head.appendChild(styleElement);
-        }
 
         // 添加事件监听器
         function attachEventListeners(modal) {
@@ -960,4 +899,5 @@
         }
     </script>
     </html>
+
 
